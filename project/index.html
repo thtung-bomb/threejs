@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo</title>
+	<link rel="stylesheet" href="index.css">
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+				"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
+			}
+		}
+	</script>
+	<style>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+			font-family: Arial, sans-serif;
+		}
+
+		.section {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.5rem;
+			color: white;
+			padding: 2rem;
+			text-align: center;
+		}
+
+		#banner {
+			background-color: #ff6347;
+		}
+
+		#intro {
+			background-color: #4682b4;
+		}
+
+		#description {
+			background-color: #32cd32;
+		}
+
+		#contact {
+			background-color: #9370db;
+		}
+
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+			max-width: 800px;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="banner" class="section">
+		<h1>Banner Section</h1>
+		<p>Welcome to our website! This is the banner section, where we introduce our main highlights and key features.
+			Scroll down to learn more about what we offer.</p>
+	</section>
+
+	<section id="intro" class="section">
+		<h1>Introduction Section</h1>
+		<p>Here we provide a brief introduction about our services, products, or the team behind the project. This is the
+			perfect spot to give a first impression and tell your audience what you're all about.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis, elit a tincidunt scelerisque, ipsum
+			libero tincidunt lorem, a faucibus nulla arcu et ex.</p>
+	</section>
+
+	<section id="description" class="section">
+		<h1>Description Section</h1>
+		<p>This section goes into more detail about the topic at hand. You can use it to explain features, details of the
+			product, or any other information you want your users to know.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue eros sit amet vestibulum egestas. Phasellus
+			nec metus a lacus fermentum blandit at nec nisl.</p>
+		<p>Aenean vehicula, odio non commodo dapibus, dui eros fringilla erat, et dictum leo sapien nec odio. Sed fringilla
+			orci vitae nibh cursus, vitae hendrerit sem convallis.</p>
+	</section>
+
+	<section id="contact" class="section">
+		<h1>Contact Section</h1>
+		<p>Ready to get in touch? This is the contact section where users can find your contact information, send inquiries,
+			or connect with your team. You can add a contact form here for more interaction.</p>
+		<p>Email: info@example.com</p>
+		<p>Phone: +123 456 789</p>
+		<p>Address: 1234 Street, City, Country</p>
+	</section>
+</body>
+
+<div id="container3D"></div>
+<script type="module" src="app.js"></script>
+
+</html>
